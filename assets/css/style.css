@@ -759,7 +759,7 @@ pre {
     position: relative;
     float: left;
     width: 100%;
-    padding: 0; 
+    padding: 2% 0 2% 0; 
     letter-spacing: .5px;
     text-transform: uppercase;
     background: none;
@@ -768,7 +768,7 @@ pre {
 .logo-brand {
     float: left;
     height: 50px;
-    margin-right: 30px;
+    margin: 0px;
     color: #666; 
     font-size: 20px;
     font-weight: 600;
@@ -1026,7 +1026,7 @@ pre {
     float: right;
     width: 30px;
     height: 46px;
-    padding: 13px 0 0;
+    padding: 35px 0 0;
     text-decoration: none;
     outline: 0;
 
@@ -2399,7 +2399,7 @@ body {
 .page-content {
     display: inline-block;
     width: 100%; 
-    padding: 100px 0;
+    padding: 0;
 }
 
 .page-content-sm {
@@ -6369,7 +6369,7 @@ Table of contents
         margin: 20px 0 0;
     }
     .page-content {
-        padding: 50px 0;
+        padding: 150px 0;
     }
     .heading-title {
         margin-bottom: 50px;
