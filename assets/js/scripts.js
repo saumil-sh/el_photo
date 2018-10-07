@@ -89,7 +89,7 @@
             $navbarSticky.sticky({
                 className: "l-navbar-wrapper_has-sticky",
                 wrapperClassName: "l-navbar-wrapper",
-                zIndex: 10000,
+                zIndex: 1200,
                 bottomSpacing: 100
             }).on("sticky-start", function() {
                 if ($navbarSticky.hasClass("l-navbar_s-center")) {
