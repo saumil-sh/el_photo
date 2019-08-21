@@ -1,0 +1,17 @@
+title: El_photography
+url:  http://127.0.0.1:4000
+baseurl:
+
+author: Disha Patel
+description: Discovering the world with my vision.
+
+defaults:
+  - scope:
+      path: "assets/images/pondi"
+    values:
+      image: true
+
+
+markdown: kramdown
+kramdown:
+  input: GFM

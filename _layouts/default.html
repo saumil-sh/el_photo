@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
 {% include head.html %}
-<body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<main>
+{{ content }}
+</main>
 
-  {{ content }}
+<script src="{{ "assets/js/folio.min.js" | relative_url }}"></script>
+<script src="{{ "assets/js/config.js" | relative_url }}"></script>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
-</html>
+
+<script>
+    FOLIO.init({
+        thumbnails : false
+    })
+</script>
