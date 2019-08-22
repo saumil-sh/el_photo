@@ -1,19 +1,20 @@
 ---
-title: Travel
+title: Pondicherry
 layout: default
-order: 3
+order: 2
 ---
+
 <div class="section">
 	<div class="container">
-		<h3 class="section-heading">Travel</h3>
+		<h3 class="section-heading">Pondicherry</h3>
 		<p class="section-description">
-			Would you like to see some?
+			My travelg from days in Pondicherry, India.
 		</p>
 	</div>
 </div>
 
 <figure>
-	<img src="assets/images/pondi/Pondicherry-1.JPG" fit="cover" alt="" />
+	<img src="assets/images/pondi/Pondicherry-1.JPG" alt="" />
 	<article>
 		<h2>Image Title</h2>
 		<p>Image description goes here!</p>
