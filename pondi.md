@@ -24,6 +24,6 @@ order: 2
 {% assign images = site.static_files | where: "image", true %}
 {% for image in images %}
 <figure>
-	<img src="{{ image.path | relative_url }}" alt="{{ image.basename }}" />
+	<img data-src="{{ image.path | relative_url }}" alt="{{ image.basename }}" />
 </figure>
 {% endfor %}
