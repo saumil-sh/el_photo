@@ -1,0 +1,26 @@
+title: El_photography
+url:  SamD97.github.io
+baseurl: /el_photo
+
+author: Disha Patel
+description: Discovering the world with my vision.
+
+collections_dir: series
+
+collections:
+  home:
+    output: true
+  pondi:
+    output: true
+  kochi:
+    output: true
+  auroville:
+    output: true
+  rj_women:
+    output: true
+  venice:
+    output: true
+
+markdown: kramdown
+kramdown:
+  input: GFM
