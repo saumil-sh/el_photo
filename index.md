@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: default
+layout: home
 type: home
 order: 1
 ---
@@ -14,7 +14,7 @@ order: 1
 		</p>
 		{% assign mypages = site.pages | where: "type", "home" | sort: "order" %}
 		{% for page in mypages %}
-		<a class="button button-primary" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+		<a class="button" href="{{ page.url | relative_url }}">{{ page.title }}</a>
 		{% endfor %}
 	</div>
 </div>

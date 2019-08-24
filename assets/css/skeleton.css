@@ -21,6 +21,8 @@
 - Tables
 - Spacing
 - Utilities
+- Section
+- Social
 - Clearing
 - Media Queries
 */
@@ -188,7 +190,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 0 solid #bbb;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -375,17 +377,28 @@ form {
   float: left; }
 
 
-  /* Sections
+  /* Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
   padding: 8rem 0 7rem;
-  text-align: center;
-}
+  text-align: center; }
 .section-heading,
 .section-description {
-  margin-bottom: 1.2rem;
-}
+  margin-bottom: 1.2rem; }
+.dark {
+  color: #fff;
+  background-color: #000; }
 
+/* Social
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.social i {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 2rem; }
+.credit {
+  font-size: 1rem;
+  margin: 2rem 0 0;
+}
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

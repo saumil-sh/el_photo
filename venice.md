@@ -1,22 +1,12 @@
 ---
 title: Venice
 layout: default
+descriptin: romantic city, indeed!
+logo: false
 type: travel
 order: 4
 ---
 
-<div class="section">
-	<div class="container">
-		<h3 class="section-heading">{{ page.title }}</h3>
-		<p class="section-description">
-			I try to write sometimes.
-		</p>
-		{% assign mypages = site.pages | where: "type", "home" | sort: "order" %}
-		{% for page in mypages %}
-		<a class="button button-primary" href="{{ page.url | relative_url }}">{{ page.title }}</a>
-		{% endfor %}
-	</div>
-</div>
 <div class="section">
 	<div class="container">
 		<div class="row">
