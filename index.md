@@ -13,6 +13,7 @@ order: 1
 			Discovering the world with my vision.
 		</p>
 		<div id="navbar">
+			<img id="brand" class="hide" src="{{ "/assets/images/logo.png" | relative_url }}">
 			{% assign mypages = site.pages | where: "type", "home" | sort: "order" %}
 			{% for page in mypages %}
 			<a class="button" href="{{ page.url | relative_url }}">{{ page.title }}</a>
