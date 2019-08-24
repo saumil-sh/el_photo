@@ -5,20 +5,22 @@ type: home
 order: 1
 ---
 
-<div class="section">
+<div class="section header">
 	<div class="container">
 		<img src="{{ "/assets/images/logo.png" | relative_url }}">
 		<h3 class="section-heading">Photoraphy</h3>
 		<p class="section-description">
 			Discovering the world with my vision.
 		</p>
-		{% assign mypages = site.pages | where: "type", "home" | sort: "order" %}
-		{% for page in mypages %}
-		<a class="button" href="{{ page.url | relative_url }}">{{ page.title }}</a>
-		{% endfor %}
+		<div id="navbar">
+			{% assign mypages = site.pages | where: "type", "home" | sort: "order" %}
+			{% for page in mypages %}
+			<a class="button" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+			{% endfor %}
+		</div>
 	</div>
 </div>
-<div class="section">
+<div class="section main">
 	<div class="container">
 		<div class="row">
 			<div class="one-half column">

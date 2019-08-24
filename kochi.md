@@ -2,12 +2,11 @@
 title: Kochi
 layout: default
 description: Kochi was hot and humid.
-logo: false
 type: travel
 order: 4
 ---
 
-<div class="section">
+<div class="section main">
 	<div class="container">
 		<div class="row">
 			<div class="one-half column">

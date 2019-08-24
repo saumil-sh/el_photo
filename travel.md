@@ -2,12 +2,11 @@
 title: Travel
 layout: default
 description: I try to roam around sometimes.
-logo: false
 type: home
 order: 3
 ---
 
-<div class="section">
+<div class="section main">
 	<div class="container">
 		{% assign mypages = site.pages | where: "type", "travel" %}
 		{% for page in mypages %}

@@ -2,12 +2,11 @@
 title: About
 layout: default
 description: My secrets.
-logo: true
 type: home
 order: 2
 ---
 
-<div class="section">
+<div class="section main">
 	<div class="container">
 		<p markdown="1">
 			Hi, I am _italic_.  

@@ -1,13 +1,12 @@
 ---
 title: Women of Rajasthan
 layout: default
-descriptin: Oh yeah, can do!
-logo: false
+description: Oh yeah, can do!
 type: project
 order: 4
 ---
 
-<div class="section">
+<div class="section main">
 	<div class="container">
 		<div class="row">
 			<div class="one-half column">

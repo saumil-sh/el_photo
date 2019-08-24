@@ -1,12 +1,28 @@
-<div class="section dark">
+<div class="section footer dark">
     <div class="container">
         <img src="{{ "/assets/images/logo_dark.png" | relative_url }}">
-        <h5 class="section-heading">Get in touch.</h5>
+        <p class="section-description">Get in touch.</p>
         <div class="social">
             <a href="https://www.instagram.com/diisshhaashh/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/dis.patel1"><i class="fab fa-facebook-square"></i></a>
             <a href="mailto:dishap71@gmail.com"><i class="fas fa-paper-plane"></i></a>
         </div>
         <p class="credit">made with <i class="fas fa-heart"></i> by Saumil Shah.</p>
     </div>
 </div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var brand = document.getElementById("brand")
+var sticky = navbar.offsetTop + 100;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+    brand.classList.remove("hide")
+  } else {
+    navbar.classList.remove("sticky");
+    brand.classList.add("hide")
+  }
+}
+</script>
