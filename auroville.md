@@ -13,12 +13,16 @@ order: 4
 				{% assign coll = site.collections | where: "label", "auroville" | first %}
 				{% assign l = coll.files.size | divided_by: 2 | floor %}
 				{% for image in coll.files limit: l %}
-				<img class="u-max-full-width" src="{{ coll.label | append: '/' | append: image.name }}" alt="{{ image.basename }}" />
+				<article class="thumb">
+					<img class="lozad u-max-full-width" data-src="{{ coll.label | append: '/' | append: image.name }}" alt="{{ image.basename }}" />
+				</article>
 				{% endfor %}
 			</div>
 			<div class="one-half column">
 				{% for image in coll.files offset: l %}
-				<img class="u-max-full-width" src="{{ coll.label | append: '/' | append: image.name }}" alt="{{ image.basename }}" />
+				<article class="thumb">
+					<img class="lozad u-max-full-width" data-src="{{ coll.label | append: '/' | append: image.name }}" alt="{{ image.basename }}" />
+				</article>
 				{% endfor %}
 			</div>
 		</div>

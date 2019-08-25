@@ -23,6 +23,8 @@
 - Utilities
 - Section
 - Social
+- Sicky
+- Thumb
 - Clearing
 - Media Queries
 */
@@ -390,6 +392,17 @@ form {
   background-color: #000; }
 
 
+/* Social
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.social i {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 2rem; }
+.credit {
+  font-size: 1rem;
+  margin: 2rem 0 -1rem; }
+
+
 /* Sticky navbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #navbar {
@@ -407,20 +420,23 @@ form {
   left: 0;
   width: 100%;
   z-index: 99 }
-.sticky + .main {
-  padding-top: 500px;
-}
 
-
-/* Social
+/* Sticky navbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.social i {
-  color: #fff;
-  font-size: 2rem;
-  margin: 0 2rem; }
-.credit {
-  font-size: 1rem;
-  margin: 2rem 0 -1rem; }
+.thumb{
+  min-height: 15em; }
+.fade {
+  animation-name: fade;
+  animation-duration: 2s; }
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 
 /* Misc

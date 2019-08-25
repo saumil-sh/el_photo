@@ -9,12 +9,12 @@
         <p class="credit">made with <i class="fas fa-heart"></i> by Saumil Shah.</p>
     </div>
 </div>
-<script>
+<script type="text/javascript">
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
 var brand = document.getElementById("brand")
-var sticky = navbar.offsetTop + 100;
+var sticky = navbar.offsetTop + 130; // find y-pos of the navbar + margin to avoid jump
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
@@ -26,3 +26,34 @@ function myFunction() {
   }
 }
 </script>
+
+  <script type="text/javascript">
+// Initialize library
+lozad('.lozad', {
+    load: function(el) {
+        el.src = el.dataset.src;
+        el.onload = function() {
+            el.classList.add('fade')
+        }
+    }
+}).observe()
+    // Initialize library to lazy load images
+    var observer = lozad('.lozad', {
+        threshold: 0.1,
+        load: function(el) {
+            el.src = el.getAttribute("data-src");
+            el.onload = function() {
+                el.classList.add('fade')
+            }
+        }
+    })
+
+    // Picture observer
+    // with default `load` method
+    var pictureObserver = lozad('.lozad-picture', {
+        threshold: 0.1
+    })
+
+    observer.observe()
+    pictureObserver.observe()
+  </script>
