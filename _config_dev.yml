@@ -20,6 +20,8 @@ collections:
     output: true
   venice:
     output: true
+  chinatown:
+    output: true
 
 markdown: kramdown
 kramdown:
