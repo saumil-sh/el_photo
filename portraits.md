@@ -1,5 +1,5 @@
 ---
-title: Portraits
+title: portraits
 layout: default
 description: I try to make people pose sometimes.
 type: home

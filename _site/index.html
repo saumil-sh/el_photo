@@ -24,10 +24,10 @@
   <script type="text/javascript" src="https://kit.fontawesome.com/1780dd6d31.js"></script>
 
   <!-- IntersectionObserver polyfill -->
-<script src="https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js"></script>
+  <script src="https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js"></script>
 
-<!-- Lozad.js from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/lozad"></script>
+  <!-- Lozad.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,7 +40,7 @@
 	<div class="section header">
 	<div class="container">
 		<img src="/assets/images/logo.png" />
-		<h3 class="section-heading">Photoraphy</h3>
+		<h3 class="section-heading">photography</h3>
 		<p class="section-description">
 			Discovering the world with my vision.
 		</p>
@@ -50,13 +50,13 @@
 			
 			<a class="button" href="/">Home</a>
 			
-			<a class="button" href="/about.html">About</a>
+			<a class="button" href="/about.html">about</a>
 			
-			<a class="button" href="/portraits.html">Portraits</a>
+			<a class="button" href="/portraits.html">portraits</a>
 			
-			<a class="button" href="/projects.html">Projects</a>
+			<a class="button" href="/projects.html">projects</a>
 			
-			<a class="button" href="/travel.html">Travel</a>
+			<a class="button" href="/travel.html">travel</a>
 			
 		</div>
 	</div>
@@ -112,6 +112,9 @@
 		</div>
 	</div>
 </div>
+<div id="Fullscreen">
+	<img src="" alt="" />
+</div>
 
 	<!-- End Document
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -144,7 +147,7 @@ function myFunction() {
 }
 </script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
 // Initialize library
 lozad('.lozad', {
     load: function(el) {
@@ -154,26 +157,54 @@ lozad('.lozad', {
         }
     }
 }).observe()
-    // Initialize library to lazy load images
-    var observer = lozad('.lozad', {
-        threshold: 0.1,
-        load: function(el) {
-            el.src = el.getAttribute("data-src");
-            el.onload = function() {
-                el.classList.add('fade')
-            }
+
+// Initialize library to lazy load images
+var observer = lozad('.lozad', {
+    threshold: 0.1,
+    load: function(el) {
+        el.src = el.getAttribute("data-src");
+        el.onload = function() {
+            el.classList.add('fade')
         }
-    })
+    }
+})
 
-    // Picture observer
-    // with default `load` method
-    var pictureObserver = lozad('.lozad-picture', {
-        threshold: 0.1
-    })
+// Picture observer
+// with default `load` method
+var pictureObserver = lozad('.lozad-picture', {
+    threshold: 0.1
+})
 
-    observer.observe()
-    pictureObserver.observe()
-  </script>
+observer.observe()
+pictureObserver.observe()
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+<script>
+
+//your code for stuff should go here
+if ( $(window).width() <= $(window).height() ) {
+  $('#Fullscreen').css('width', $(window).width() + 'px');
+  $('#Fullscreen').css('height', 100 + '%');
+  $('#Fullscreen img').css('width', 100 + '%');
+} else {
+  $('#Fullscreen').css('width', 100 + '%');
+  $('#Fullscreen').css('height', $(window).height() + 'px');
+  $('#Fullscreen img').css('height', 100 + '%');
+}
+
+//for when you click on an image
+$('.lozad').click(function() {
+  var src = $(this).attr('data-src'); //get the source attribute of the clicked image
+  $('#Fullscreen img').attr('src', src); //assign it to the tag for your fullscreen div
+  $('#Fullscreen').fadeIn();
+});
+$('#Fullscreen').click(function() {
+  $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image. 
+});
+
+</script>
  
 </body>
 </html>

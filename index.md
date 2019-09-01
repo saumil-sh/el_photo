@@ -8,7 +8,7 @@ order: 1
 <div class="section header">
 	<div class="container">
 		<img src="{{ "/assets/images/logo.png" | relative_url }}">
-		<h3 class="section-heading">Photoraphy</h3>
+		<h3 class="section-heading">photography</h3>
 		<p class="section-description">
 			Discovering the world with my vision.
 		</p>
@@ -27,7 +27,7 @@ order: 1
 		<div class="row">
 			<div class="one-half column">
 				{% assign coll = site.collections | where: "label", "home" | first %}
-				{% assign l = coll.files.size | divided_by: 2 | floor %}
+				{% assign l = coll.files.size | divided_by: 2 | ceil %}
 				{% for image in coll.files limit: l %}
 				<article class="thumb">
 					<img class="lozad u-max-full-width" data-src="{{ coll.label | append: '/' | append: image.name }}" alt="{{ image.basename }}" />
@@ -43,4 +43,7 @@ order: 1
 			</div>
 		</div>
 	</div>
+</div>
+<div id="Fullscreen">
+	<img src="" alt="" />
 </div>

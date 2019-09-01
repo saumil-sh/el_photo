@@ -1,7 +1,7 @@
 ---
-title: About
+title: about
 layout: default
-description: My secrets.
+description: my endeavour
 type: home
 order: 2
 ---
@@ -9,9 +9,15 @@ order: 2
 <div class="section main">
 	<div class="container">
 		<p markdown="1">
-			Hi, I am _italic_.  
-			You must be __bold__.  
-			`A robot, I am!`
+I am a traveler who misses her trains. Despite being messed up with my flight schedules, I still manage to visit places and document what the world has to offer, from surreal nature to its kind souls. I believe everyone has their own journey, and it is worth documenting.  
+---  
+Why El?  
+El is short for Elysian.  
+---  
+Elysian (_adjective_)  
+__/ɪˈlɪzɪən/__  
+1. of or relating to Elysium  
+2. blissful, delightful elysian peace  
 		</p>
 	</div>
 </div>

@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: projects
 layout: default
 description: I try to work sometimes.
 type: home

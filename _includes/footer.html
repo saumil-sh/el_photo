@@ -27,7 +27,7 @@ function myFunction() {
 }
 </script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
 // Initialize library
 lozad('.lozad', {
     load: function(el) {
@@ -37,23 +37,51 @@ lozad('.lozad', {
         }
     }
 }).observe()
-    // Initialize library to lazy load images
-    var observer = lozad('.lozad', {
-        threshold: 0.1,
-        load: function(el) {
-            el.src = el.getAttribute("data-src");
-            el.onload = function() {
-                el.classList.add('fade')
-            }
+
+// Initialize library to lazy load images
+var observer = lozad('.lozad', {
+    threshold: 0.1,
+    load: function(el) {
+        el.src = el.getAttribute("data-src");
+        el.onload = function() {
+            el.classList.add('fade')
         }
-    })
+    }
+})
 
-    // Picture observer
-    // with default `load` method
-    var pictureObserver = lozad('.lozad-picture', {
-        threshold: 0.1
-    })
+// Picture observer
+// with default `load` method
+var pictureObserver = lozad('.lozad-picture', {
+    threshold: 0.1
+})
 
-    observer.observe()
-    pictureObserver.observe()
-  </script>
+observer.observe()
+pictureObserver.observe()
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+<script>
+
+//your code for stuff should go here
+if ( $(window).width() <= $(window).height() ) {
+  $('#Fullscreen').css('width', $(window).width() + 'px');
+  $('#Fullscreen').css('height', 100 + '%');
+  $('#Fullscreen img').css('width', 100 + '%');
+} else {
+  $('#Fullscreen').css('width', 100 + '%');
+  $('#Fullscreen').css('height', $(window).height() + 'px');
+  $('#Fullscreen img').css('height', 100 + '%');
+}
+
+//for when you click on an image
+$('.lozad').click(function() {
+  var src = $(this).attr('data-src'); //get the source attribute of the clicked image
+  $('#Fullscreen img').attr('src', src); //assign it to the tag for your fullscreen div
+  $('#Fullscreen').fadeIn();
+});
+$('#Fullscreen').click(function() {
+  $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image. 
+});
+
+</script>

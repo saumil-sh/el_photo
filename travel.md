@@ -1,5 +1,5 @@
 ---
-title: Travel
+title: travel
 layout: default
 description: I try to roam around sometimes.
 type: home
