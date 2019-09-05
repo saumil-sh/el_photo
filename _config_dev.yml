@@ -1,6 +1,6 @@
 title: El_photography
 url:  http://127.0.0.1:4000
-baseurl:
+baseurl: /
 
 author: Disha Patel
 description: Discovering the world with my vision.
@@ -15,8 +15,6 @@ collections:
   pondi:
     output: true
   kochi:
-    output: true
-  auroville:
     output: true
   rj_women:
     output: true

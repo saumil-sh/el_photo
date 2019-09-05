@@ -1,6 +1,6 @@
 ---
 title: about
-layout: default
+layout: rest
 description: my endeavour
 type: home
 order: 2

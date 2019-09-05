@@ -1,6 +1,6 @@
 ---
 title: portraits
-layout: default
+layout: rest
 description: I try to make people pose sometimes.
 type: home
 order: 3

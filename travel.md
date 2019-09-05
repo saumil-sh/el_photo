@@ -1,6 +1,6 @@
 ---
 title: travel
-layout: default
+layout: rest
 description: I try to roam around sometimes.
 type: home
 order: 3

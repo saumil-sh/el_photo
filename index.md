@@ -32,7 +32,7 @@ order: 1
 				{% assign l = coll.files.size | divided_by: 2 | ceil %}
 				{% for image in coll.files limit: l %}
 				<article class="thumb">
-					<img class="lozad u-max-full-width" data-src="{{ '/' | append: coll.label | append: '/' | append: image.name }}" alt="{{ image.basename }}" />
+					<img class="lozad u-max-full-width" data-src="{{ coll.label | append: '/' | append: image.name }}" alt="{{ image.basename }}" />
 				</article>
 				{% endfor %}
 			</div>

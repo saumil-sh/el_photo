@@ -1,6 +1,6 @@
 ---
 title: projects
-layout: default
+layout: rest
 description: I try to work sometimes.
 type: home
 order: 3
