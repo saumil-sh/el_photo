@@ -5,6 +5,8 @@ baseurl: /el_photo
 author: Disha Patel
 description: Discovering the world with my vision.
 
+include: ['_pages']
+
 collections_dir: series
 
 collections:
@@ -21,6 +23,14 @@ collections:
   venice:
     output: true
   chinatown:
+    output: true
+  rimi:
+    output: true
+  london:
+    output: true
+  mumbai:
+    output: true
+  cn_fishnet:
     output: true
 
 markdown: kramdown
