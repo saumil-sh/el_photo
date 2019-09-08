@@ -409,7 +409,7 @@ form {
 #navbar {
   overflow: hidden;
   background-color: #fff;
-  padding: 2rem 0 0; }
+  padding: 1rem 0 0 0; }
 #brand {
   height: 3.5rem;
   vertical-align: top; }
@@ -497,7 +497,7 @@ there.
   .header {
     padding: 1rem 0; }
   .main {
-    padding: 0rem 0 6rem; }
+    padding: 0rem 0 5rem; }
   .footer {
     padding: 1rem 0; }
 }
@@ -521,7 +521,7 @@ there.
   .header {
     padding: 3rem 0; }
   .main {
-    padding: 1rem 0 8rem; }
+    padding: 1rem 0 7rem; }
   .footer {
     padding: 3rem 0; }
   .section-description {
@@ -537,7 +537,7 @@ there.
   .header {
     padding: 4rem 0; }
   .main {
-    padding: 2rem 0 8rem; }
+    padding: 1rem 0 8rem; }
   .footer {
     padding: 3rem 0; }
 }

@@ -7,6 +7,7 @@
  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="section main">
 	<div class="container">
+		{{ page.body | markdownify }}
 		<div class="row">
 			{% assign k = page.name.size | minus: 3 %}
 			{% assign n = page.name | slice: 0, k %}
