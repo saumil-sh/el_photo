@@ -2,7 +2,7 @@
 title: travel
 layout: rest
 description: I try to roam around sometimes.
-type: home
+type: parent
 order: 3
 ---
 

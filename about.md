@@ -2,7 +2,7 @@
 title: about
 layout: rest
 description: my endeavour
-type: home
+type: parent
 order: 2
 ---
 

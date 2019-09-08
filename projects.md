@@ -2,7 +2,7 @@
 title: projects
 layout: rest
 description: I try to work sometimes.
-type: home
+type: parent
 order: 3
 ---
 

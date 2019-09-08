@@ -2,7 +2,7 @@
 title: portraits
 layout: rest
 description: I try to make people pose sometimes.
-type: home
+type: parent
 order: 3
 ---
 
