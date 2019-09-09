@@ -27,17 +27,18 @@ order: 1
 <div class="section main">
 	<div class="container">
 		<div class="row">
+			{% assign coll = site.collections | where: "label", "home" | first %}
+			{% assign list = coll.files | sort: "basename" %}
+			{% assign l = coll.files.size | divided_by: 2 | ceil %}
 			<div class="one-half column">
-				{% assign coll = site.collections | where: "label", "home" | first %}
-				{% assign l = coll.files.size | divided_by: 2 | ceil %}
-				{% for image in coll.files limit: l %}
+				{% for image in list limit: l %}
 				<article class="thumb">
 					<img class="lozad u-max-full-width" data-src="{{ coll.label | append: '/' | append: image.name }}" alt="{{ image.basename }}" />
 				</article>
 				{% endfor %}
 			</div>
 			<div class="one-half column">
-				{% for image in coll.files offset: l %}
+				{% for image in list offset: l %}
 				<article class="thumb">
 					<img class="lozad u-max-full-width" data-src="{{ coll.label | append: '/' | append: image.name }}" alt="{{ image.basename }}" />
 				</article>
