@@ -1,7 +1,7 @@
 ---
 title: Chinese Fishnet
 layout: default
-description: 
+description: back-breaking
 body: >
   Kochi is one charming city with the kindest souls. I was there for a very brief period, and I was told not to miss the Chinese styled fishing. So, I left early in the morning to catch a glimpse of the exalted fishers. I am very petit, and if anybody sees me with my big camera, they get stunned a little. As I was taking pictures, one of the fishers couldn't help but notice me and asked me to join them on the pier. Watching them break their backs from so close, It was a thrilling experience to be a part of them.  
     

@@ -1,7 +1,7 @@
 ---
 title: about
 layout: rest
-description: my endeavour
+description: my new endeavour
 type: parent
 order: 2
 ---

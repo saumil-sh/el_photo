@@ -1,7 +1,7 @@
 ---
 title: Pondicherry
 layout: default
-description: a day in pondi
+description: Pondicherry by night, with light.
 type: travel
 order: 4
 ---

@@ -30,6 +30,8 @@ collections:
     output: true
   cn_fishnet:
     output: true
+  market:
+    output: true
 
 markdown: kramdown
 kramdown:

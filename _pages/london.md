@@ -1,7 +1,7 @@
 ---
 title: London
 layout: default
-description: its London baby!
+description: awake submarines
 type: travel
 order: 4
 ---

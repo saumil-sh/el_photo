@@ -1,7 +1,7 @@
 ---
 title: Chinatown
 layout: default
-description: way better than the one in Paris!
+description: Much, (much) better than the one we have in Paris!
 type: travel
 order: 4
 ---

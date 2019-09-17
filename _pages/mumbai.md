@@ -1,7 +1,7 @@
 ---
 title: Mumbai
 layout: default
-description: mumbai meri jaan.
+description: Only Matin Parr fans will get this.
 type: travel
 order: 4
 ---

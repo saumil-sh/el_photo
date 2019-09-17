@@ -1,7 +1,7 @@
 ---
 title: Venice
 layout: default
-description: romantic city, indeed!
+description: A romantic city, indeed!
 type: travel
 order: 4
 ---

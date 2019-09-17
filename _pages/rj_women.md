@@ -1,7 +1,7 @@
 ---
 title: Women of Rajasthan
 layout: default
-description: oh yeah, can do!
+description: We, the women.
 type: project
 order: 4
 ---

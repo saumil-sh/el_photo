@@ -1,6 +1,6 @@
 title: El_photography
 url:  http://127.0.0.1:4000
-baseurl: /
+baseurl: 
 
 author: Disha Patel
 description: Discovering the world with my vision.
@@ -30,7 +30,9 @@ collections:
     output: true
   cn_fishnet:
     output: true
-
+  market:
+    output: true
+    
 markdown: kramdown
 kramdown:
   input: GFM
