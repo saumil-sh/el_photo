@@ -32,10 +32,6 @@ collections:
     output: true
   market:
     output: true
-  ploen:
-    output: true
-  saumil:
-    output: true
 
 markdown: kramdown
 kramdown:
