@@ -31,6 +31,8 @@ collections:
   cn_fishnet:
     output: true
   market:
+    output: 
+  bastilleday:
     output: true
 
 markdown: kramdown
