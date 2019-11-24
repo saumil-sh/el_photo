@@ -1,6 +1,6 @@
 <div class="section footer dark">
     <div class="container">
-        <img src="{{ "/assets/images/logo_dark.png" | relative_url }}">
+        <img src="{{ "/assets/img/logo_dark.svg" | relative_url }}">
         <p class="section-description">Get in touch.</p>
         <div class="social">
             <a href="https://www.instagram.com/diisshhaashh/"><i class="fab fa-instagram"></i></a>
@@ -11,17 +11,11 @@
     </div>
 </div>
 
-<!-- font-awesome -->
-<script type="text/javascript" src="https://kit.fontawesome.com/1780dd6d31.js"></script>
-
 <!-- IntersectionObserver polyfill -->
 <script src="https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js"></script>
 
-<!-- Lozad.js -->
+<!-- Lozad -->
 <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
-
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 
 <!-- sticky navbar -->
 <script type="text/javascript">
@@ -47,7 +41,7 @@ function myFunction() {
 }
 </script>
 
-<!-- sticky navbar -->
+<!-- lazy loading -->
 <script type="text/javascript">
 // Initialize library
 lozad('.lozad', {
@@ -80,26 +74,30 @@ observer.observe()
 pictureObserver.observe()
 </script>
 
-<!-- lightbox -->
-<script>
-//your code for stuff should go here
-if ( $(window).width() <= $(window).height() ) {
-  $('#Fullscreen').css('width', $(window).width() + 'px');
-  $('#Fullscreen').css('height', 100 + '%');
-  $('#Fullscreen img').css('width', 100 + '%');
-} else {
-  $('#Fullscreen').css('width', 100 + '%');
-  $('#Fullscreen').css('height', $(window).height() + 'px');
-  $('#Fullscreen img').css('height', 100 + '%');
-}
 
-//for when you click on an image
-$('.lozad').click(function() {
-  var src = $(this).attr('data-src'); //get the source attribute of the clicked image
-  $('#Fullscreen img').attr('src', src); //assign it to the tag for your fullscreen div
-  $('#Fullscreen').fadeIn();
-});
-$('#Fullscreen').click(function() {
-  $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image. 
-});
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+<!-- lightgallery -->
+<script type="text/javascript" src="{{ "/assets/lightgallery.js" | relative_url }}"></script>
+
+<!-- cross-browser mousewheel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+<!-- lightgallery call -->
+<script type="text/javascript">
+    $('#col1').lightGallery({
+        selector: '.lozad',
+        mode: 'lg-fade',
+        download: false
+    });
+
+    $('#col2').lightGallery({
+        selector: '.lozad',
+        mode: 'lg-fade',
+        download: false
+    });
 </script>
+
+<!-- font-awesome -->
+<script type="text/javascript" src="https://kit.fontawesome.com/1780dd6d31.js"></script>

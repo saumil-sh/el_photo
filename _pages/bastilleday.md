@@ -1,5 +1,5 @@
 ---
-title: bastille Day'19
+title: Bastille Day'19
 layout: default
 description: viva la france
 type: project

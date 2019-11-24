@@ -21,23 +21,24 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="/assets/css/normalize.css">
   <link rel="stylesheet" href="/assets/css/skeleton.css">
+  <link rel="stylesheet" href="/assets/css/lightgallery.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="/assets/images/logo.png">
+  <link rel="icon" type="image/svg" href="/assets/img/logo.svg">
 
 </head>
 <body>
 	<div class="section header">
 	<div class="container">
-		<img src="/assets/images/logo.png">
-		<h3 class="section-heading">kathakali</h3>
+		<img src="/assets/img/logo.svg">
+		<h3 class="section-heading">Kathakali</h3>
 		<p class="section-description">
 			weight of emotions and costume
 		</p>
 		<div id="navbar-wrapper">
 			<div id="navbar">
-				<img id="brand" class="hide" src="/assets/images/logo.png">
+				<img id="brand" class="hide" src="/assets/img/logo.svg">
 				
 				
 				<a class="button" href="/">home</a>
@@ -66,15 +67,7 @@
 			
 			
 			
-			<div class="one-half column">
-				
-				<article class="thumb">
-					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_08.jpg" alt="Kathakali_08" />
-				</article>
-				
-				<article class="thumb">
-					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_09.jpg" alt="Kathakali_09" />
-				</article>
+			<div class="one-half column" id="col1">
 				
 				<article class="thumb">
 					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_01.jpg" alt="Kathakali_01" />
@@ -89,26 +82,30 @@
 				</article>
 				
 				<article class="thumb">
-					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_13.jpg" alt="Kathakali_13" />
+					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_04.jpg" alt="Kathakali_04" />
 				</article>
 				
-			</div>
-			<div class="one-half column">
-				
 				<article class="thumb">
-					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_07.jpg" alt="Kathakali_07" />
+					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_05.jpg" alt="Kathakali_05" />
 				</article>
 				
 				<article class="thumb">
 					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_06.jpg" alt="Kathakali_06" />
 				</article>
 				
+			</div>
+			<div class="one-half column" id="col2">
+				
 				<article class="thumb">
-					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_12.jpg" alt="Kathakali_12" />
+					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_07.jpg" alt="Kathakali_07" />
 				</article>
 				
 				<article class="thumb">
-					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_04.jpg" alt="Kathakali_04" />
+					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_08.jpg" alt="Kathakali_08" />
+				</article>
+				
+				<article class="thumb">
+					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_09.jpg" alt="Kathakali_09" />
 				</article>
 				
 				<article class="thumb">
@@ -120,21 +117,22 @@
 				</article>
 				
 				<article class="thumb">
-					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_05.jpg" alt="Kathakali_05" />
+					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_12.jpg" alt="Kathakali_12" />
+				</article>
+				
+				<article class="thumb">
+					<img class="lozad u-max-full-width" data-src="/kathakali/Kathakali_13.jpg" alt="Kathakali_13" />
 				</article>
 				
 			</div>
 		</div>
 	</div>
 </div>
-<div id="Fullscreen">
-	<img src="" alt="" />
-</div>
 	<!-- End Document
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<div class="section footer dark">
     <div class="container">
-        <img src="/assets/images/logo_dark.png">
+        <img src="/assets/img/logo_dark.svg">
         <p class="section-description">Get in touch.</p>
         <div class="social">
             <a href="https://www.instagram.com/diisshhaashh/"><i class="fab fa-instagram"></i></a>
@@ -145,17 +143,11 @@
     </div>
 </div>
 
-<!-- font-awesome -->
-<script type="text/javascript" src="https://kit.fontawesome.com/1780dd6d31.js"></script>
-
 <!-- IntersectionObserver polyfill -->
 <script src="https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js"></script>
 
-<!-- Lozad.js -->
+<!-- Lozad -->
 <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
-
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 
 <!-- sticky navbar -->
 <script type="text/javascript">
@@ -181,7 +173,7 @@ function myFunction() {
 }
 </script>
 
-<!-- sticky navbar -->
+<!-- lazy loading -->
 <script type="text/javascript">
 // Initialize library
 lozad('.lozad', {
@@ -214,28 +206,32 @@ observer.observe()
 pictureObserver.observe()
 </script>
 
-<!-- lightbox -->
-<script>
-//your code for stuff should go here
-if ( $(window).width() <= $(window).height() ) {
-  $('#Fullscreen').css('width', $(window).width() + 'px');
-  $('#Fullscreen').css('height', 100 + '%');
-  $('#Fullscreen img').css('width', 100 + '%');
-} else {
-  $('#Fullscreen').css('width', 100 + '%');
-  $('#Fullscreen').css('height', $(window).height() + 'px');
-  $('#Fullscreen img').css('height', 100 + '%');
-}
 
-//for when you click on an image
-$('.lozad').click(function() {
-  var src = $(this).attr('data-src'); //get the source attribute of the clicked image
-  $('#Fullscreen img').attr('src', src); //assign it to the tag for your fullscreen div
-  $('#Fullscreen').fadeIn();
-});
-$('#Fullscreen').click(function() {
-  $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image. 
-});
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+<!-- lightgallery -->
+<script type="text/javascript" src="/assets/lightgallery.js"></script>
+
+<!-- cross-browser mousewheel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+<!-- lightgallery call -->
+<script type="text/javascript">
+    $('#col1').lightGallery({
+        selector: '.lozad',
+        mode: 'lg-fade',
+        download: false
+    });
+
+    $('#col2').lightGallery({
+        selector: '.lozad',
+        mode: 'lg-fade',
+        download: false
+    });
 </script>
+
+<!-- font-awesome -->
+<script type="text/javascript" src="https://kit.fontawesome.com/1780dd6d31.js"></script>
 </body>
 </html>
