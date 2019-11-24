@@ -60,11 +60,11 @@
 
 <div class="section main">
 	<div class="container">
-		<div class="row">
+		<div class="row" id="gallery">
 			
 			
 			<!---->
-			<div class="column" id="col1">
+			<div class="column">
 				
 				<article class="thumb">
 					<img class="lozad u-max-full-width" data-src="home/home-01.JPG" alt="home-01" />
@@ -172,14 +172,9 @@ pictureObserver.observe()
 
 <!-- lightgallery call -->
 <script type="text/javascript">
-    $('#col1').lightGallery({
+    $('#gallery').lightGallery({
         selector: '.lozad',
-        mode: 'lg-fade',
-        download: false
-    });
-
-    $('#col2').lightGallery({
-        selector: '.lozad',
+        speed: 200,
         mode: 'lg-fade',
         download: false
     });

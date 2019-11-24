@@ -63,7 +63,7 @@
 
 <p>As I got talking to the fishers, I realized how much rubbish is lying around. They also complained that somedays they don’t catch even a single fish due to the polluted ocean water. I feel that it is we, who are being hard on ourselves by being ignorant to mother nature. It is so naive of us not to realize that we are cutting off the very branch we are sitting on.</p>
 
-		<div class="row">
+		<div class="row" id="gallery">
 			
 			
 			
@@ -224,14 +224,9 @@ pictureObserver.observe()
 
 <!-- lightgallery call -->
 <script type="text/javascript">
-    $('#col1').lightGallery({
+    $('#gallery').lightGallery({
         selector: '.lozad',
-        mode: 'lg-fade',
-        download: false
-    });
-
-    $('#col2').lightGallery({
-        selector: '.lozad',
+        speed: 200,
         mode: 'lg-fade',
         download: false
     });
