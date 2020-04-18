@@ -449,7 +449,8 @@ form {
   padding: 1rem 0 0 0; }
 #brand {
   height: 3.5rem;
-  vertical-align: top; }
+  vertical-align: middle;
+  cursor: pointer; }
 .hide {
   display: none; }
 .sticky {
@@ -458,6 +459,17 @@ form {
   left: 0;
   width: 100%;
   z-index: 99 }
+@media (max-width: 750px) {
+  #navbar { padding: 1rem 0; }
+  .close.sticky .hide { 
+    display: block; 
+    text-align: center; }
+  .close.sticky a:not(:first-child) { display: none; }
+  .open.sticky a {
+    display: block;
+    text-align: center; }
+}
+
 
 /* Thumb
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -471,7 +483,8 @@ form {
 
 @keyframes fade {
   from {
-    opacity: 0; }
+    opacity: 0;
+    filter: blur(1px); }
   to {
     opacity: 1; }
 }

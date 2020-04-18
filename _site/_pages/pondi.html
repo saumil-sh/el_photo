@@ -37,8 +37,8 @@
 			Pondicherry by night, with light.
 		</p>
 		<div id="navbar-wrapper">
-			<div id="navbar">
-				<img id="brand" class="hide" src="/assets/img/logo.svg">
+			<div id="navbar" class="close">
+				<a onclick="menuExpand()"><img id="brand" class="hide" src="/assets/img/logo.svg"></a>
 				
 				
 				<a class="button" href="/">home</a>
@@ -200,6 +200,17 @@ pictureObserver.observe()
         mode: 'lg-fade',
         download: false
     });
+</script>
+
+<script type="text/javascript">
+    function menuExpand() {
+  var x = document.getElementById("navbar");
+  if (x.className === "close sticky") {
+    x.className = "open sticky";
+  } else {
+    x.className = "close sticky";
+  }
+}
 </script>
 
 <!-- font-awesome -->
