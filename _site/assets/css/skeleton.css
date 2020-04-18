@@ -36,6 +36,7 @@
 .container {
   position: relative;
   width: 100%;
+  min-height: 32vh;
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
@@ -46,9 +47,8 @@
   float: left;
   box-sizing: border-box; }
 
-  .column img {
-    padding: 15px 0;
-  }
+.column img {
+    padding: 15px 0; }
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -162,6 +162,8 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 p {
   margin-top: 0; }
+.main p {
+  text-align: justify; }
 
 
 /* Links
@@ -170,6 +172,9 @@ a {
   color: #1EAEDB; }
 a:hover {
   color: #0FA0CE; }
+.footer a {
+  color: #FFF;
+  text-decoration: none; }
 
 
 /* Buttons
@@ -389,8 +394,40 @@ form {
 .section-description {
   margin-bottom: 1.2rem; }
 .dark {
-  color: #fff;
+  color: #FFF;
   background-color: #000; }
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .section { padding: 3rem 0; }
+  .header { padding: 1rem 0; }
+  .main { padding: 0rem 0 5rem; }
+  .footer { padding: 1rem 0; }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .section { padding: 4rem 0; }
+  .header { padding: 2rem 0; }
+  .main { padding: 0rem 0 6rem; }
+  .footer { padding: 2rem 0; }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .section { padding: 5rem 0; }
+  .header { padding: 3rem 0; }
+  .main { padding: 1rem 0 7rem; }
+  .footer { padding: 3rem 0; }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .section { padding: 6rem 0; }
+  .header { padding: 4rem 0; }
+  .main { padding: 1rem 0 8rem; }
+  .footer { padding: 3rem 0; }
+}
 
 
 /* Social
@@ -425,7 +462,7 @@ form {
 /* Thumb
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .thumb {
-  min-height: 15em; }
+  min-height: 16em; }
 .thumb img {
   cursor: pointer; }
 .fade {
@@ -434,29 +471,10 @@ form {
 
 @keyframes fade {
   from {
-    opacity: 0;
-  }
+    opacity: 0; }
   to {
-    opacity: 1;
-  }
+    opacity: 1; }
 }
-
-
-/* Fullscreen
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-#Fullscreen {
-  display: none;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0,0,0,0.8); }
-#Fullscreen img {
-  display: block;
-  margin: auto;
-  }
 
 
 /* Misc
@@ -489,59 +507,17 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-
 /* Larger than mobile */
-@media (min-width: 400px) {
-  .section {
-    padding: 3rem 0; }
-  .header {
-    padding: 1rem 0; }
-  .main {
-    padding: 0rem 0 5rem; }
-  .footer {
-    padding: 1rem 0; }
-}
+@media (min-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
-  .section {
-    padding: 4rem 0; }
-  .header {
-    padding: 2rem 0; }
-  .main {
-    padding: 0rem 0 6rem; }
-  .footer {
-    padding: 2rem 0; }
-}
+@media (min-width: 550px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {
-  .section {
-    padding: 5rem 0; }
-  .header {
-    padding: 3rem 0; }
-  .main {
-    padding: 1rem 0 7rem; }
-  .footer {
-    padding: 3rem 0; }
-  .section-description {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto; }
-}
+@media (min-width: 750px) {}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
-  .section {
-    padding: 6rem 0; }
-  .header {
-    padding: 4rem 0; }
-  .main {
-    padding: 1rem 0 8rem; }
-  .footer {
-    padding: 3rem 0; }
-}
+@media (min-width: 1000px) {}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
-
